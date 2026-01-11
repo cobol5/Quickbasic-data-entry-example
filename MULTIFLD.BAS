@@ -1,13 +1,4 @@
-'I think many QB programmers will find this routine usefull. I wrote it
-'because I HAD to have it. QUICKLY. Having recieved so much good stuff from
-'QuickShare, I figure this small donation is the least I can do for now.
-'I have since this was written, refined this and other high level routines
-'which I will eventually make available at the usual cost - FREE.
-'Use this code 'till your sick of it. It has served its purpose for me.
-'Laugh at it 'till your gut hurts.
-'When I wrote this, I threw it together from pieces parts of other
-'things I had handy. It certainly is not optimized but it works fairly well.
-'Jerry C. Jackson - Deland, Fl.
+
   
    DEFINT A-Z
   
@@ -198,7 +189,7 @@ REM $STATIC
       mf1.fghelp = cyan + bright
       mf1.bghelp = blue
       mf1Title$ = " Enter Customer / Vehicle Information Below "
-      mf1Prompt$ = " TAB / SHIFT-TAB to move between fields þ F10 when finished "
+      mf1Prompt$ = " TAB / SHIFT-TAB to move between fields Ã¾ F10 when finished "
      
       CLS
      
@@ -248,7 +239,7 @@ DEFINT A-Z
 '---------------------------------------------------------------------------
 '
 '  This sub finds the exact size for the array dimension so that no memory
-'  gets wasted. A little less than elegant, but I was in a hurry.
+'  gets wasted.
 '
 '---------------------------------------------------------------------------
      
@@ -285,8 +276,8 @@ DEFINT A-Z
 '        MultiFieldInputWindow - the ALL purpose input window
 '****************************************************************************
 '
-'  I would like to add the ability to pull up a scrollable select window
-'  to point and shoot values that will be plugged into the active field.
+
+
 '
 '
    SUB MFI (mf AS MultiFieldType, mfFieldName$(), mfFieldCap%(), mfFieldValue$(), mfFieldMask$(), mfFieldLen%(), mfFieldPos(), mfFieldHelp$(), mfTitle$, mfPrompt$, mfScrollFileSpec$()) STATIC
@@ -821,4 +812,5 @@ DEFSNG A-Z
       columns% = (CLNG(reg.ax) AND &HFF00) \ 256
       page% = (CLNG(reg.bx) AND &HFF00) \ 256
    END SUB
+
 
